@@ -1,0 +1,96 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Level3/Level3.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=3]
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Operators/plus.png" type="Texture" id=5]
+[ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Operators/paralel.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Symbols/L.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Numbers/3.png" type="Texture" id=9]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends RichTextLabel
+
+func _ready():
+	$ColorRect.rect_global_position.x = 0
+	$ColorRect.rect_size.x = 1024
+"
+
+[node name="Level3" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="FadingLabel" parent="." index="3" instance=ExtResource( 6 )]
+margin_left = 165.572
+margin_top = 84.4949
+margin_right = 893.572
+margin_bottom = 109.495
+bbcode_enabled = false
+bbcode_text = ""
+text = "It seems that you're getting it, here's another one a bit more tricky"
+script = SubResource( 1 )
+
+[node name="FadingLabel2" parent="." index="4" instance=ExtResource( 6 )]
+margin_left = 176.899
+margin_top = 436.56
+margin_right = 904.899
+margin_bottom = 461.56
+bbcode_enabled = false
+bbcode_text = ""
+text = "Great puzzle solving skills"
+script = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="5"]
+margin_left = 233.411
+margin_top = 255.977
+margin_right = 249.411
+margin_bottom = 271.977
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+
+[node name="TextureRect2" type="TextureRect" parent="." index="6"]
+margin_left = 266.411
+margin_top = 255.977
+margin_right = 282.411
+margin_bottom = 271.977
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+
+[node name="TextureRect3" type="TextureRect" parent="." index="7"]
+margin_left = 312.463
+margin_top = 256.644
+margin_right = 328.463
+margin_bottom = 272.645
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 9 )
+
+[node name="TextureRect4" type="TextureRect" parent="." index="8"]
+margin_left = 359.849
+margin_top = 256.644
+margin_right = 375.849
+margin_bottom = 272.645
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="TextureRect5" type="TextureRect" parent="." index="9"]
+margin_left = 409.239
+margin_top = 256.645
+margin_right = 425.239
+margin_bottom = 272.645
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+
+[node name="MovableButton" parent="." index="10" instance=ExtResource( 4 )]
+margin_left = 228.354
+margin_top = 252.84
+margin_right = 244.354
+margin_bottom = 268.84
+texture_normal = ExtResource( 8 )
+text = ExtResource( 8 )
+
+[node name="Button" parent="." index="11"]
+margin_left = 662.419
+margin_top = 470.888
+margin_right = 735.419
+margin_bottom = 508.888

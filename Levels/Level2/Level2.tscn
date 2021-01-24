@@ -1,0 +1,94 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Level2/Level2.gd" type="Script" id=2]
+[ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Numbers/1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Numbers/2.png" type="Texture" id=6]
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Operators/minus.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Operators/paralel.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Numbers/3.png" type="Texture" id=10]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends RichTextLabel
+
+func _ready():
+	$ColorRect.rect_global_position.x = 0
+	$ColorRect.rect_size.x = 1024
+
+func intro():
+	$AnimationPlayer.play(\"intro\")
+"
+
+[node name="Level2" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="FadingLabel" parent="." index="0" instance=ExtResource( 3 )]
+margin_left = 182.846
+margin_top = 68.2421
+margin_right = 910.846
+margin_bottom = 93.2421
+bbcode_enabled = false
+bbcode_text = ""
+text = "Enough with the [Wave] effect, let's start simple, some basic arithmetics"
+script = SubResource( 1 )
+
+[node name="FadingLabel2" parent="." index="1" instance=ExtResource( 3 )]
+margin_left = 182.488
+margin_top = 463.784
+margin_right = 432.488
+margin_bottom = 488.784
+bbcode_enabled = false
+bbcode_text = ""
+text = "It was not that hard, right?"
+script = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="3"]
+margin_left = 214.057
+margin_top = 242.598
+margin_right = 230.057
+margin_bottom = 258.598
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 10 )
+
+[node name="TextureRect2" type="TextureRect" parent="." index="4"]
+margin_left = 261.625
+margin_top = 243.787
+margin_right = 277.625
+margin_bottom = 259.787
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 8 )
+
+[node name="TextureRect3" type="TextureRect" parent="." index="5"]
+margin_left = 316.329
+margin_top = 242.598
+margin_right = 332.329
+margin_bottom = 258.598
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+
+[node name="TextureRect4" type="TextureRect" parent="." index="6"]
+margin_left = 368.654
+margin_top = 242.598
+margin_right = 384.654
+margin_bottom = 258.598
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+
+[node name="TextureRect5" type="TextureRect" parent="." index="7"]
+margin_left = 422.168
+margin_top = 240.22
+margin_right = 438.168
+margin_bottom = 256.22
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+
+[node name="MovableButton" parent="." index="8" instance=ExtResource( 7 )]
+margin_left = 262.924
+margin_top = 245.813
+margin_right = 278.924
+margin_bottom = 261.813
+texture_normal = ExtResource( 9 )
+text = ExtResource( 9 )

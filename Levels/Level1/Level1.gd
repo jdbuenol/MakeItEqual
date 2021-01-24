@@ -1,12 +1,10 @@
-extends level
-
-onready var rect : Rect2 = Rect2($TextureRect6.get_rect().position, $TextureRect6.get_rect().size * $TextureRect6.rect_scale.x)
-
-var win : bool = false
+extends Level
 
 func _ready():
 # warning-ignore:return_value_discarded
-	$FadingLabel/AnimationPlayer.connect("animation_finished", self, "next_label")
+	$FadingLabel/AnimationPlayer.connect(
+		"animation_finished", self, "next_label"
+	)
 	$FadingLabel/AnimationPlayer.play("intro")
 # warning-ignore:return_value_discarded
 	$FadingLabel2/AnimationPlayer.connect("animation_finished", self, "tip")
@@ -40,6 +38,3 @@ func tip2(_anim_name):
 	yield(get_tree().create_timer(5), "timeout")
 	if ! win:
 		$FadingLabel5/AnimationPlayer.play("intro")
-
-func won(_anim_name):
-	$Button.visible = true

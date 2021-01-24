@@ -10,18 +10,28 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "ColorRect",
-"class": "level",
+"class": "Level",
 "language": "GDScript",
 "path": "res://Levels/GenericLevel.gd"
+}, {
+"base": "TextureButton",
+"class": "ShrinkableButton",
+"language": "GDScript",
+"path": "res://Buttons/ShrinkableButton.gd"
 } ]
 _global_script_class_icons={
-"level": ""
+"Level": "",
+"ShrinkableButton": ""
 }
 
 [application]
 
 config/name="MakeItEqual"
 config/icon="res://icon.png"
+
+[autoload]
+
+LevelControl="*res://LevelControl.gd"
 
 [gui]
 

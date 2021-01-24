@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Buttons/ShrinkableButton.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "to 2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2, 2 ), Vector2( 4, 4 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "to 3"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4, 4 ), Vector2( 6, 6 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "to 4"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 6, 6 ), Vector2( 8, 8 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "to 5"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 8, 8 ), Vector2( 10, 10 ) ]
+}
+
+[node name="ShrinkableButton" instance=ExtResource( 1 )]
+modulate = Color( 0, 1, 0, 1 )
+rect_scale = Vector2( 3, 3 )
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" parent="." index="0"]
+"anims/to 2" = SubResource( 1 )
+"anims/to 3" = SubResource( 2 )
+"anims/to 4" = SubResource( 3 )
+"anims/to 5" = SubResource( 4 )

@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Levels/GenericLevel.gd" type="Script" id=1]
+[ext_resource path="res://Assets/square.png" type="Texture" id=2]
+[ext_resource path="res://Assets/sound.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Symbols/slash.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Music and FX/cabq0aMz.wav" type="AudioStream" id=5]
 
 [node name="GenericLevel" type="ColorRect"]
 anchor_right = 1.0
@@ -10,3 +14,36 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TrueRect" type="TextureRect" parent="."]
+margin_left = 178.0
+margin_top = 194.0
+margin_right = 194.0
+margin_bottom = 210.0
+rect_scale = Vector2( 20, 10 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sound" type="Sprite" parent="."]
+position = Vector2( 990.557, 30.0406 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="paralel" type="Sprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 987.592, 37.2456 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 844.337
+margin_top = 495.899
+margin_right = 921.337
+margin_bottom = 533.899
+text = "NEXT"
+
+[node name="Blip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
