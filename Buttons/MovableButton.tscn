@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Numbers/1.png" type="Texture" id=1]
+[ext_resource path="res://Buttons/MovableButton.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "grow"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3, 3 ), Vector2( 6, 6 ) ]
+}
+
+[node name="MovableButton" type="TextureButton" groups=[
+"MovableButton",
+]]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 0.0350761
+margin_right = 16.0351
+margin_bottom = 16.0
+rect_scale = Vector2( 3, 3 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 1 )
+texture_hover = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/grow = SubResource( 1 )

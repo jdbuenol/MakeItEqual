@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Buttons/FadingLabel.gd" type="Script" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "intro"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 733, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 733, 21 ), Vector2( 0, 21 ) ]
+}
+
+[node name="FadingLabel" type="RichTextLabel"]
+margin_left = 1.0
+margin_right = 729.0
+margin_bottom = 25.0
+bbcode_enabled = true
+bbcode_text = "[wave]Welcome to  [color=#CC0000]M[/color][color=#BC000F]a[/color][color=#AC001F]k[/color][color=#9C002F]e[/color][color=#8D003E] [/color][color=#7D004E]I[/color][color=#6D005E]t[/color][color=#5E006D] [/color][color=#4E007D]E[/color][color=#3E008D]Q[/color][color=#2F009C]U[/color][color=#1F00AC]A[/color][color=#0F00BC]L[/color] try solving these engaging and over-exaggerated puzzles[/wave]"
+text = "Welcome to  Make It EQUAL try solving these engaging and over-exaggerated puzzles"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 729.0
+margin_right = 729.0
+margin_bottom = 21.0
+size_flags_horizontal = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/intro = SubResource( 1 )
