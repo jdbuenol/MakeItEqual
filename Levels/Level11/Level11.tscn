@@ -1,0 +1,157 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Symbols/slash.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Numbers/5.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Operators/minus.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=5]
+[ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Symbols/Smiley.png" type="Texture" id=7]
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Levels/Level11/Level11.gd" type="Script" id=9]
+[ext_resource path="res://Assets/square_missing.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Symbols/Box.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Numbers/4.png" type="Texture" id=12]
+
+[node name="Level11" instance=ExtResource( 1 )]
+script = ExtResource( 9 )
+
+[node name="TrueRect" parent="." index="0"]
+margin_left = 164.253
+margin_top = 161.723
+margin_right = 180.253
+margin_bottom = 177.723
+rect_scale = Vector2( 30, 20 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="6"]
+margin_left = 243.643
+margin_top = 217.157
+margin_right = 259.643
+margin_bottom = 233.157
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+
+[node name="TextureRect2" type="TextureRect" parent="." index="7"]
+margin_left = 245.762
+margin_top = 342.644
+margin_right = 261.762
+margin_bottom = 358.644
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+
+[node name="TextureRect3" type="TextureRect" parent="." index="8"]
+margin_left = 325.255
+margin_top = 214.012
+margin_right = 341.255
+margin_bottom = 230.012
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+
+[node name="TextureRect4" type="TextureRect" parent="." index="9"]
+margin_left = 326.348
+margin_top = 344.107
+margin_right = 342.348
+margin_bottom = 360.107
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="." index="10"]
+margin_left = 394.307
+margin_top = 211.965
+margin_right = 410.307
+margin_bottom = 227.965
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="." index="11"]
+margin_left = 359.659
+margin_top = 345.608
+margin_right = 375.659
+margin_bottom = 361.608
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="." index="12"]
+margin_left = 400.491
+margin_top = 349.102
+margin_right = 416.491
+margin_bottom = 365.102
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="." index="13"]
+margin_left = 454.369
+margin_top = 350.225
+margin_right = 470.369
+margin_bottom = 366.225
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect9" type="TextureRect" parent="." index="14"]
+margin_left = 508.392
+margin_top = 350.022
+margin_right = 524.392
+margin_bottom = 366.022
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MovableButton2" parent="." index="15" instance=ExtResource( 8 )]
+margin_left = 508.176
+margin_top = 349.77
+margin_right = 524.176
+margin_bottom = 365.77
+texture_normal = ExtResource( 2 )
+text = ExtResource( 2 )
+
+[node name="MovableButton" parent="." index="16" instance=ExtResource( 8 )]
+margin_left = 398.412
+margin_top = 346.964
+margin_right = 414.412
+margin_bottom = 362.964
+texture_normal = ExtResource( 4 )
+text = ExtResource( 4 )
+
+[node name="FadingLabel" parent="." index="17" instance=ExtResource( 6 )]
+margin_left = 131.309
+margin_top = 57.4551
+margin_right = 629.309
+margin_bottom = 79.4551
+bbcode_enabled = false
+bbcode_text = ""
+text = "Sometimes you will meet with some \"Smiley\" equations."
+
+[node name="FadingLabel2" parent="." index="18" instance=ExtResource( 6 )]
+margin_left = 156.163
+margin_top = 97.6727
+margin_right = 596.163
+margin_bottom = 119.673
+bbcode_enabled = false
+bbcode_text = ""
+text = "You must make the two smileys be worth the same."
+
+[node name="FadingLabel3" parent="." index="19" instance=ExtResource( 6 )]
+margin_left = 340.644
+margin_top = 524.833
+margin_right = 427.644
+margin_bottom = 546.833
+bbcode_enabled = false
+bbcode_text = ""
+text = "Great job."

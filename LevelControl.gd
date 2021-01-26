@@ -10,7 +10,7 @@ func _ready():
 	add_child(music)
 
 var levels : Dictionary = {
-	"Level0" : "res://Levels/Level0/Level0.tscn",
+	"Level0" : "res://Levels/Level1/Level1.tscn",
 	"Level1" : "res://Levels/Level2/Level2.tscn",
 	"Level2" : "res://Levels/Level3/Level3.tscn",
 	"Level3" : "res://Levels/Level4/Level4.tscn",
@@ -31,6 +31,13 @@ func prep():
 # warning-ignore:return_value_discarded
 		current_level.get_node("Button").connect("pressed", self, "next")
 	level_number = Level_ids[current_level.name]
+	if level_number == 0:
+		current_level.get_node("TrueRect").queue_free()
+		current_level.get_node("sound").queue_free()
+		current_level.get_node("paralel").queue_free()
+		current_level.get_node("Label").queue_free()
+	else:
+		current_level.get_node("Label").text = "Screen " + str(level_number)
 	if level_number <= 5:
 		current_level.get_node("Blip").volume_db = -80
 	if level_number >= 5:
@@ -40,8 +47,17 @@ func prep():
 			current_level.connect("music", self, "play_music")
 		elif level_number > 5:
 			play_music()
+	if level_number > 10 and level_number < 16:
+		music.stop()
+		music.stream = load("res://Assets/Music and FX/MakeItEqual2.ogg")
+		music.play()
 
 func next():
+	var save : File = File.new()
+	if save.open("user://level.save", save.WRITE) == 0:
+		save.store_line(str(level_number))
+	else:
+		print("Coudn't save the progress")
 # warning-ignore:return_value_discarded
 	get_tree().change_scene(levels[current_level.name])
 

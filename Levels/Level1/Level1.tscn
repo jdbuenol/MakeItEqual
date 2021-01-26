@@ -77,46 +77,63 @@ text = ExtResource( 7 )
 
 [node name="FadingLabel" parent="." index="7" instance=ExtResource( 10 )]
 margin_left = 133.078
-margin_top = 86.1505
+margin_top = 78.1324
 margin_right = 861.078
-margin_bottom = 111.151
+margin_bottom = 103.133
+bbcode_text = "
+[wave]Welcome to  [color=#CC0000]M[/color][color=#BC000F]a[/color][color=#AC001F]k[/color][color=#9C002F]e[/color][color=#8D003E] [/color][color=#7D004E]I[/color][color=#6D005E]t[/color][color=#5E006D] [/color][color=#4E007D]E[/color][color=#3E008D]Q[/color][color=#2F009C]U[/color][color=#1F00AC]A[/color][color=#0F00BC]L[/color] try solving these engaging and over-exaggerated puzzles[/wave]"
+text = "
+Welcome to  Make It EQUAL try solving these engaging and over-exaggerated puzzles"
 
 [node name="FadingLabel2" parent="." index="8" instance=ExtResource( 10 )]
-margin_left = 155.368
-margin_top = 137.119
-margin_right = 848.368
-margin_bottom = 162.119
-bbcode_text = "[wave]For winning in this game you should make the equation inside the rectangle true[/wave]"
-text = "For winning in this game you should make the equation inside the rectangle true"
+margin_left = 153.586
+margin_top = 121.974
+margin_right = 846.586
+margin_bottom = 146.974
+bbcode_text = "
+[wave]For winning in this game you should make the equation inside the rectangle true[/wave]"
+text = "
+For winning in this game you should make the equation inside the rectangle true"
 
 [node name="FadingLabel3" parent="." index="9" instance=ExtResource( 10 )]
-margin_left = 125.455
-margin_top = 412.0
-margin_right = 514.455
-margin_bottom = 437.0
-bbcode_text = "[wave]Tip: you can drag and drop [color=#0000ff]Blue color[/color] symbols[/wave]"
-text = "Tip: you can drag and drop Blue color symbols"
+margin_left = 123.673
+margin_top = 395.073
+margin_right = 512.673
+margin_bottom = 420.073
+bbcode_text = "
+[wave]Tip: you can drag and drop [color=#0000ff]Blue color[/color] symbols[/wave]"
+text = "
+Tip: you can drag and drop Blue color symbols"
 
 [node name="FadingLabel5" parent="." index="10" instance=ExtResource( 10 )]
-margin_left = 168.7
-margin_top = 439.181
-margin_right = 487.7
-margin_bottom = 464.181
-bbcode_text = "[wave]Just do it, it's not that hard...[/wave]"
-text = "Just do it, it's not that hard..."
+margin_left = 169.0
+margin_top = 431.873
+margin_right = 488.0
+margin_bottom = 465.873
+bbcode_text = "
+[wave]Just do it, it's not that hard...[/wave]"
+text = "
+Just do it, it's not that hard..."
 
 [node name="FadingLabel6" parent="." index="11" instance=ExtResource( 10 )]
-margin_left = 539.117
-margin_top = 184.676
-margin_right = 858.117
-margin_bottom = 209.676
-bbcode_text = "[wave]*Sigh* outside the box...[/wave]"
-text = "*Sigh* outside the box..."
+margin_left = 540.899
+margin_top = 178.44
+margin_right = 859.899
+margin_bottom = 203.44
+bbcode_text = "
+[wave]*Sigh* outside the box...[/wave]"
+text = "
+*Sigh* outside the box..."
 
 [node name="FadingLabel4" parent="." index="12" instance=ExtResource( 10 )]
-margin_left = 126.0
-margin_top = 489.0
-margin_right = 511.0
-margin_bottom = 514.0
-bbcode_text = "[wave]Wow, you did it, it was very unimpressive[/wave]"
-text = "Wow, you did it, it was very unimpressive"
+margin_left = 124.436
+margin_top = 477.182
+margin_right = 509.436
+margin_bottom = 513.182
+bbcode_text = "
+[wave]Wow, you did it, it was very unimpressive[/wave]"
+text = "
+Wow, you did it, it was very unimpressive"
+
+[node name="Label" parent="." index="17"]
+text = "SCREEN 1"

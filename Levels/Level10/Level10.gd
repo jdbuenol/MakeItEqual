@@ -45,7 +45,22 @@ func drop():
 
 func reveal(_anim_name):
 	$Control/ColorRect.queue_free()
-	yield(get_tree().create_timer(15), "timeout")
+	yield(get_tree().create_timer(3), "timeout")
+	if ! win:
+		$FadingLabel5/AnimationPlayer.play("intro")
+	else:
+		return
+	yield(get_tree().create_timer(3), "timeout")
+	if ! win:
+		$FadingLabel6/AnimationPlayer.play("intro")
+	else:
+		return
+	yield(get_tree().create_timer(3), "timeout")
+	if ! win:
+		$FadingLabel7/AnimationPlayer.play("intro")
+	else:
+		return
+	yield(get_tree().create_timer(3), "timeout")
 	if ! win:
 		$Control.queue_free()
 		$FadingLabel2/AnimationPlayer.play("intro")

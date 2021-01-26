@@ -14,12 +14,14 @@
 script = ExtResource( 3 )
 
 [node name="FadingLabel" parent="." index="5" instance=ExtResource( 5 )]
-margin_left = 169.011
-margin_top = 55.6713
-margin_right = 897.011
-margin_bottom = 80.6713
-bbcode_text = "[wave][color=#00FF00]Green symbols[/color][/wave] can grow and shrink with the UP and DOWN keys"
-text = "Green symbols can grow and shrink with the UP and DOWN keys"
+margin_left = 170.0
+margin_top = 56.0
+margin_right = 898.0
+margin_bottom = 96.0
+bbcode_text = "
+[wave][color=#00FF00]Green symbols[/color][/wave] can grow and shrink with the UP and DOWN keys"
+text = "
+Green symbols can grow and shrink with the UP and DOWN keys"
 
 [node name="FadingLabel2" parent="." index="6" instance=ExtResource( 5 )]
 margin_left = 248.471

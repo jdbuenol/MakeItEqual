@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Assets/Numbers/5.png" type="Texture" id=15]
 [ext_resource path="res://Assets/Operators/Times.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Numbers/6.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Symbols/C.png" type="Texture" id=18]
 
 [node name="Level10" instance=ExtResource( 1 )]
 script = ExtResource( 9 )
@@ -26,7 +27,7 @@ margin_left = 60.2529
 margin_top = 189.281
 margin_right = 76.2529
 margin_bottom = 205.281
-rect_scale = Vector2( 40, 10 )
+rect_scale = Vector2( 45, 10 )
 
 [node name="FadingLabel" parent="." index="5" instance=ExtResource( 2 )]
 margin_left = 131.0
@@ -46,7 +47,34 @@ bbcode_enabled = false
 bbcode_text = ""
 text = "Haha, just jokin, here's the real one"
 
-[node name="FadingLabel3" parent="." index="7" instance=ExtResource( 2 )]
+[node name="FadingLabel5" parent="." index="7" instance=ExtResource( 2 )]
+margin_left = 211.888
+margin_top = 92.6989
+margin_right = 524.888
+margin_bottom = 113.699
+bbcode_enabled = false
+bbcode_text = ""
+text = "."
+
+[node name="FadingLabel6" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 225.102
+margin_top = 92.6989
+margin_right = 538.102
+margin_bottom = 113.699
+bbcode_enabled = false
+bbcode_text = ""
+text = "."
+
+[node name="FadingLabel7" parent="." index="9" instance=ExtResource( 2 )]
+margin_left = 239.26
+margin_top = 92.6989
+margin_right = 552.26
+margin_bottom = 113.699
+bbcode_enabled = false
+bbcode_text = ""
+text = "."
+
+[node name="FadingLabel3" parent="." index="10" instance=ExtResource( 2 )]
 margin_left = 115.0
 margin_top = 406.0
 margin_right = 459.0
@@ -55,7 +83,7 @@ bbcode_enabled = false
 bbcode_text = ""
 text = "Ehm... Yo weren't supposed to solve it"
 
-[node name="FadingLabel4" parent="." index="8" instance=ExtResource( 2 )]
+[node name="FadingLabel4" parent="." index="11" instance=ExtResource( 2 )]
 margin_left = 192.0
 margin_top = 455.0
 margin_right = 337.0
@@ -64,7 +92,7 @@ bbcode_enabled = false
 bbcode_text = ""
 text = "Hehe, congratz"
 
-[node name="Control2" type="Control" parent="." index="9"]
+[node name="Control2" type="Control" parent="." index="12"]
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
@@ -146,7 +174,6 @@ margin_left = 200.672
 margin_top = 254.732
 margin_right = 216.672
 margin_bottom = 270.732
-rect_scale = Vector2( 3, 3 )
 texture_normal = ExtResource( 11 )
 text = ExtResource( 11 )
 
@@ -155,7 +182,6 @@ margin_left = 476.071
 margin_top = 236.068
 margin_right = 492.071
 margin_bottom = 252.068
-rect_scale = Vector2( 3, 3 )
 text = ExtResource( 5 )
 
 [node name="ColorRect" type="ColorRect" parent="Control2" index="10"]
@@ -168,7 +194,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Control" type="Control" parent="." index="10"]
+[node name="Control" type="Control" parent="." index="13"]
 margin_left = -94.0
 margin_right = -54.0
 margin_bottom = 40.0
@@ -297,7 +323,29 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect14" type="TextureRect" parent="Control" index="11"]
+[node name="TextureRect23" type="TextureRect" parent="Control" index="11"]
+margin_left = 714.175
+margin_top = 243.401
+margin_right = 730.175
+margin_bottom = 259.401
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect24" type="TextureRect" parent="Control" index="12"]
+margin_left = 761.371
+margin_top = 242.652
+margin_right = 777.371
+margin_bottom = 258.652
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect14" type="TextureRect" parent="Control" index="13"]
 margin_left = 582.936
 margin_top = 233.662
 margin_right = 598.936
@@ -309,7 +357,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect13" type="TextureRect" parent="Control" index="12"]
+[node name="TextureRect13" type="TextureRect" parent="Control" index="14"]
 margin_left = 510.408
 margin_top = 229.251
 margin_right = 526.408
@@ -321,7 +369,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect12" type="TextureRect" parent="Control" index="13"]
+[node name="TextureRect12" type="TextureRect" parent="Control" index="15"]
 margin_left = 453.592
 margin_top = 235.858
 margin_right = 469.592
@@ -332,7 +380,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect8" type="TextureRect" parent="Control" index="14"]
+[node name="TextureRect8" type="TextureRect" parent="Control" index="16"]
 margin_left = 366.618
 margin_top = 239.929
 margin_right = 382.618
@@ -343,7 +391,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect16" type="TextureRect" parent="Control" index="15"]
+[node name="TextureRect16" type="TextureRect" parent="Control" index="17"]
 margin_left = 614.263
 margin_top = 244.553
 margin_right = 630.263
@@ -354,7 +402,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect22" type="TextureRect" parent="Control" index="16"]
+[node name="TextureRect22" type="TextureRect" parent="Control" index="18"]
 margin_left = 523.0
 margin_top = 242.0
 margin_right = 539.0
@@ -365,14 +413,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MovableButton" parent="Control" index="17" instance=ExtResource( 13 )]
+[node name="MovableButton" parent="Control" index="19" instance=ExtResource( 13 )]
 margin_left = 644.103
 margin_top = 278.848
 margin_right = 660.103
 margin_bottom = 294.848
 text = ExtResource( 5 )
 
-[node name="MovableButton4" parent="Control" index="18" instance=ExtResource( 13 )]
+[node name="MovableButton4" parent="Control" index="20" instance=ExtResource( 13 )]
 margin_left = 438.613
 margin_top = 246.264
 margin_right = 454.613
@@ -380,7 +428,7 @@ margin_bottom = 262.264
 rect_scale = Vector2( 3, 1 )
 text = ExtResource( 5 )
 
-[node name="MovableButton2" parent="Control" index="19" instance=ExtResource( 13 )]
+[node name="MovableButton2" parent="Control" index="21" instance=ExtResource( 13 )]
 margin_left = 450.549
 margin_top = 220.587
 margin_right = 466.549
@@ -388,7 +436,7 @@ margin_bottom = 236.587
 texture_normal = ExtResource( 11 )
 text = ExtResource( 11 )
 
-[node name="MovableButton3" parent="Control" index="20" instance=ExtResource( 13 )]
+[node name="MovableButton3" parent="Control" index="22" instance=ExtResource( 13 )]
 margin_left = 366.875
 margin_top = 251.865
 margin_right = 382.875
@@ -396,7 +444,7 @@ margin_bottom = 267.865
 texture_normal = ExtResource( 11 )
 text = ExtResource( 11 )
 
-[node name="ShrinkableButton" parent="Control" index="21" instance=ExtResource( 12 )]
+[node name="ShrinkableButton" parent="Control" index="23" instance=ExtResource( 12 )]
 margin_left = 693.841
 margin_top = 213.011
 margin_right = 709.841
@@ -405,7 +453,8 @@ rect_scale = Vector2( 1, 1 )
 text = ExtResource( 5 )
 current_size = 1
 
-[node name="ColorRect" type="ColorRect" parent="Control" index="22"]
+[node name="ColorRect" type="ColorRect" parent="Control" index="24"]
+visible = false
 margin_left = 200.392
 margin_top = 202.148
 margin_right = 746.392

@@ -1,0 +1,96 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/TextureButtons/START.png" type="Texture" id=2]
+[ext_resource path="res://Assets/TextureButtons/START0.png" type="Texture" id=3]
+[ext_resource path="res://Assets/TextureButtons/EXIT0.png" type="Texture" id=4]
+[ext_resource path="res://Assets/TextureButtons/EXIT.png" type="Texture" id=5]
+[ext_resource path="res://Assets/TextureButtons/CONTINUE.png" type="Texture" id=6]
+[ext_resource path="res://Assets/TextureButtons/CREDITS0.png" type="Texture" id=7]
+[ext_resource path="res://Assets/TextureButtons/CONTINUE0.png" type="Texture" id=8]
+[ext_resource path="res://Assets/TextureButtons/CREDITS.png" type="Texture" id=9]
+[ext_resource path="res://Levels/Level0/Level0.gd" type="Script" id=10]
+
+[node name="Level0" instance=ExtResource( 1 )]
+script = ExtResource( 10 )
+
+[node name="TrueRect" parent="." index="0"]
+visible = false
+
+[node name="sound" parent="." index="1"]
+visible = false
+
+[node name="paralel" parent="." index="2"]
+visible = false
+
+[node name="Button" parent="." index="4"]
+visible = true
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.50293
+anchor_bottom = 1.0
+margin_left = -72.7963
+margin_top = -317.693
+margin_right = 4.20367
+margin_bottom = -301.693
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." index="5"]
+anchor_bottom = 0.527
+margin_left = 243.975
+margin_top = 49.3857
+margin_right = 400.975
+margin_bottom = -233.814
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 4, 4 )
+bbcode_enabled = true
+bbcode_text = "
+[wave][color=#FF0000]M[/color][color=#FF7500]A[/color][color=#FFEB00]K[/color][color=#9CFF00]E[/color] [color=#00FF4E]I[/color][color=#00FFC4]T[/color] [color=#004EFF]E[/color][color=#2700FF]Q[/color][color=#9C00FF]U[/color][color=#FF00EB]A[/color][color=#FF0075]L[/color][/wave]"
+text = "
+MAKE IT EQUAL"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="TextureButton" parent="." index="6"]
+margin_left = 425.265
+margin_top = 338.643
+margin_right = 515.265
+margin_bottom = 354.643
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CREDITS" type="TextureButton" parent="." index="7"]
+margin_left = 441.056
+margin_top = 395.224
+margin_right = 531.056
+margin_bottom = 411.224
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EXIT" type="TextureButton" parent="." index="8"]
+margin_left = 450.036
+margin_top = 447.98
+margin_right = 540.036
+margin_bottom = 463.98
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
