@@ -19,9 +19,3 @@ func current_button():
 
 func dropped():
 	emit_signal("drop")
-
-func grow(bigger : bool):
-	if bigger:
-		$AnimationPlayer.play("grow")
-	else:
-		$AnimationPlayer.play_backwards("grow")

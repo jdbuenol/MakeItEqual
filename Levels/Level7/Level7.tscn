@@ -1,0 +1,92 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Numbers/5.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Operators/plus.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=4]
+[ext_resource path="res://Buttons/ShrinkableButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Numbers/0.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Numbers/1.png" type="Texture" id=8]
+[ext_resource path="res://Levels/Level7/Level7.gd" type="Script" id=9]
+
+
+
+[node name="Level7" instance=ExtResource( 1 )]
+script = ExtResource( 9 )
+
+[node name="TrueRect" parent="." index="0"]
+rect_scale = Vector2( 22, 10 )
+
+[node name="FadingLabel" parent="." index="5" instance=ExtResource( 6 )]
+margin_left = 179.576
+margin_top = 77.4949
+margin_right = 529.576
+margin_bottom = 102.495
+bbcode_enabled = false
+bbcode_text = ""
+text = "I will let you alone for a bit, good luck"
+
+[node name="TextureRect" type="TextureRect" parent="." index="6"]
+margin_left = 213.879
+margin_top = 247.124
+margin_right = 229.879
+margin_bottom = 263.124
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="." index="7"]
+margin_left = 263.323
+margin_top = 247.569
+margin_right = 279.323
+margin_bottom = 263.569
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="." index="8"]
+margin_left = 446.754
+margin_top = 247.152
+margin_right = 462.754
+margin_bottom = 263.152
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="." index="9"]
+margin_left = 359.891
+margin_top = 247.152
+margin_right = 375.891
+margin_bottom = 263.152
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="." index="10"]
+margin_left = 315.212
+margin_top = 246.766
+margin_right = 331.212
+margin_bottom = 262.766
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShrinkableButton" parent="." index="11" instance=ExtResource( 5 )]
+margin_left = 195.58
+margin_top = 270.829
+margin_right = 211.58
+margin_bottom = 286.829
+rect_scale = Vector2( 3, 1 )
+text = ExtResource( 8 )
+current_size = 1

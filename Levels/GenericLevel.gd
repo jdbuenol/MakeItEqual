@@ -20,13 +20,10 @@ func _ready():
 
 func current_button(button : TextureButton):
 	anchor_pos = get_viewport().get_mouse_position() - button.rect_global_position
-	button.grow(true)
 	$Blip.play()
 	current = button
 
 func drop():
-	if not current is ShrinkableButton:
-		current.grow(false)
 	current = null
 
 func _process(_delta):

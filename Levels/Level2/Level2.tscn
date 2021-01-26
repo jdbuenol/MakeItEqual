@@ -11,6 +11,8 @@
 [ext_resource path="res://Assets/Operators/paralel.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Numbers/3.png" type="Texture" id=10]
 
+
+
 [sub_resource type="GDScript" id=1]
 script/source = "extends RichTextLabel
 

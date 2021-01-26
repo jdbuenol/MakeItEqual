@@ -86,16 +86,16 @@ margin_left = 155.368
 margin_top = 137.119
 margin_right = 848.368
 margin_bottom = 162.119
-bbcode_text = "[wave]For winning in this game you should make the statement inside the rectangle true[/wave]"
-text = "For winning in this game you should make the statement inside the rectangle true"
+bbcode_text = "[wave]For winning in this game you should make the equation inside the rectangle true[/wave]"
+text = "For winning in this game you should make the equation inside the rectangle true"
 
 [node name="FadingLabel3" parent="." index="9" instance=ExtResource( 10 )]
-margin_left = 149.0
+margin_left = 125.455
 margin_top = 412.0
-margin_right = 468.0
+margin_right = 514.455
 margin_bottom = 437.0
-bbcode_text = "[wave]Tip: you can drag [color=#0000ff]Blue color[/color] symbols[/wave]"
-text = "Tip: you can drag Blue color symbols"
+bbcode_text = "[wave]Tip: you can drag and drop [color=#0000ff]Blue color[/color] symbols[/wave]"
+text = "Tip: you can drag and drop Blue color symbols"
 
 [node name="FadingLabel5" parent="." index="10" instance=ExtResource( 10 )]
 margin_left = 168.7

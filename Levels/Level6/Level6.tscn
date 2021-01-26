@@ -13,15 +13,7 @@
 [node name="Level6" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
-[node name="ShrinkableButton" parent="." index="5" instance=ExtResource( 2 )]
-margin_left = 315.035
-margin_top = 251.0
-margin_right = 331.035
-margin_bottom = 267.0
-texture_normal = ExtResource( 7 )
-text = ExtResource( 7 )
-
-[node name="FadingLabel" parent="." index="6" instance=ExtResource( 5 )]
+[node name="FadingLabel" parent="." index="5" instance=ExtResource( 5 )]
 margin_left = 169.011
 margin_top = 55.6713
 margin_right = 897.011
@@ -29,7 +21,7 @@ margin_bottom = 80.6713
 bbcode_text = "[wave][color=#00FF00]Green symbols[/color][/wave] can grow and shrink with the UP and DOWN keys"
 text = "Green symbols can grow and shrink with the UP and DOWN keys"
 
-[node name="FadingLabel2" parent="." index="7" instance=ExtResource( 5 )]
+[node name="FadingLabel2" parent="." index="6" instance=ExtResource( 5 )]
 margin_left = 248.471
 margin_top = 440.256
 margin_right = 976.471
@@ -38,7 +30,7 @@ bbcode_enabled = false
 bbcode_text = ""
 text = "Woah, you did it, incredible"
 
-[node name="TextureRect" type="TextureRect" parent="." index="8"]
+[node name="TextureRect" type="TextureRect" parent="." index="7"]
 margin_left = 223.0
 margin_top = 252.0
 margin_right = 239.0
@@ -49,7 +41,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect3" type="TextureRect" parent="." index="9"]
+[node name="TextureRect3" type="TextureRect" parent="." index="8"]
 margin_left = 365.072
 margin_top = 251.206
 margin_right = 381.072
@@ -60,7 +52,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect4" type="TextureRect" parent="." index="10"]
+[node name="TextureRect4" type="TextureRect" parent="." index="9"]
 margin_left = 415.076
 margin_top = 251.206
 margin_right = 431.076
@@ -71,10 +63,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect2" type="TextureRect" parent="." index="11"]
+[node name="TextureRect2" type="TextureRect" parent="." index="10"]
 margin_left = 273.0
 margin_top = 230.0
 margin_right = 289.0
 margin_bottom = 246.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 4 )
+
+[node name="ShrinkableButton" parent="." index="11" instance=ExtResource( 2 )]
+margin_left = 315.035
+margin_top = 251.0
+margin_right = 331.035
+margin_bottom = 267.0
+texture_normal = ExtResource( 7 )
+text = ExtResource( 7 )

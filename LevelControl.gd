@@ -10,14 +10,20 @@ func _ready():
 	add_child(music)
 
 var levels : Dictionary = {
+	"Level0" : "res://Levels/Level0/Level0.tscn",
 	"Level1" : "res://Levels/Level2/Level2.tscn",
 	"Level2" : "res://Levels/Level3/Level3.tscn",
 	"Level3" : "res://Levels/Level4/Level4.tscn",
 	"Level4" : "res://Levels/Level5/Level5.tscn",
-	"Level5" : "res://Levels/Level6/Level6.tscn"
+	"Level5" : "res://Levels/Level6/Level6.tscn",
+	"Level6" : "res://Levels/Level7/Level7.tscn",
+	"Level7" : "res://Levels/Level8/Level8.tscn",
+	"Level8" : "res://Levels/Level9/Level9.tscn",
+	"Level9" : "res://Levels/Level10/Level10.tscn",
+	"Level10" : "res://Levels/Level11/Level11.tscn",
 }
 
-enum Level_ids {Level0, Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10}
+enum Level_ids {Level0, Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10, Level11}
 
 func prep():
 	current_level = get_viewport().get_children()[-1]

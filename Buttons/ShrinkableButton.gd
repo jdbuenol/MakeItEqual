@@ -2,7 +2,7 @@ extends "res://Buttons/MovableButton.gd"
 
 class_name ShrinkableButton
 
-var current_size : int = 3
+export var current_size : int = 3
 
 func shrink():
 	if current_size > 1:
