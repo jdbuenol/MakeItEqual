@@ -10,8 +10,6 @@
 [ext_resource path="res://Assets/Symbols/slash.png" type="Texture" id=8]
 [ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=9]
 
-
-
 [node name="Level5" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
@@ -81,6 +79,5 @@ margin_left = 966.351
 margin_top = 12.1066
 margin_right = 982.351
 margin_bottom = 28.1066
-rect_scale = Vector2( 3, 3 )
 texture_normal = ExtResource( 8 )
 text = ExtResource( 8 )

@@ -163,9 +163,9 @@ texture = ExtResource( 14 )
 
 [node name="MovableButton" parent="Control2" index="7" instance=ExtResource( 13 )]
 margin_left = 390.641
-margin_top = 246.914
+margin_top = 244.391
 margin_right = 406.641
-margin_bottom = 262.914
+margin_bottom = 260.391
 rect_scale = Vector2( 3, 1 )
 text = ExtResource( 5 )
 

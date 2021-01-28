@@ -1,0 +1,126 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Numbers/3.png" type="Texture" id=2]
+[ext_resource path="res://Buttons/RotableButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Operators/minus.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Numbers/1.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Numbers/4.png" type="Texture" id=7]
+[ext_resource path="res://Assets/square_missing.png" type="Texture" id=8]
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Numbers/broken.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Numbers/7.png" type="Texture" id=11]
+[ext_resource path="res://Levels/Level19/Level19.gd" type="Script" id=12]
+
+[node name="Level19" instance=ExtResource( 1 )]
+script = ExtResource( 12 )
+
+[node name="TrueRect" parent="." index="0"]
+margin_left = 165.653
+margin_top = 196.245
+margin_right = 181.653
+margin_bottom = 212.245
+rect_scale = Vector2( 30, 10 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="6"]
+margin_left = 222.487
+margin_top = 242.617
+margin_right = 238.487
+margin_bottom = 258.617
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="." index="7"]
+margin_left = 264.239
+margin_top = 244.736
+margin_right = 280.239
+margin_bottom = 260.736
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 10 )
+
+[node name="TextureRect4" type="TextureRect" parent="." index="8"]
+margin_left = 366.304
+margin_top = 242.883
+margin_right = 382.304
+margin_bottom = 258.883
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="." index="9"]
+margin_left = 404.052
+margin_top = 243.676
+margin_right = 420.052
+margin_bottom = 259.676
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect9" type="TextureRect" parent="." index="10"]
+margin_left = 329.444
+margin_top = 243.676
+margin_right = 345.444
+margin_bottom = 259.676
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 8 )
+
+[node name="TextureRect6" type="TextureRect" parent="." index="11"]
+margin_left = 445.664
+margin_top = 241.558
+margin_right = 461.664
+margin_bottom = 257.558
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+
+[node name="TextureRect7" type="TextureRect" parent="." index="12"]
+margin_left = 481.278
+margin_top = 246.495
+margin_right = 497.278
+margin_bottom = 262.495
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="." index="13"]
+margin_left = 525.966
+margin_top = 244.254
+margin_right = 541.966
+margin_bottom = 260.254
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+
+[node name="MovableButton" parent="." index="14" instance=ExtResource( 9 )]
+margin_left = 524.391
+margin_top = 228.257
+margin_right = 540.391
+margin_bottom = 244.257
+rect_scale = Vector2( 2.5, 3 )
+texture_normal = ExtResource( 5 )
+text = ExtResource( 5 )
+
+[node name="MovableButton2" parent="." index="15" instance=ExtResource( 9 )]
+margin_left = 465.564
+margin_top = 243.99
+margin_right = 481.564
+margin_bottom = 259.99
+rect_scale = Vector2( 3, 3 )
+text = ExtResource( 6 )
+
+[node name="RotableButton" parent="." index="16" instance=ExtResource( 3 )]
+margin_left = 562.193
+margin_top = 245.378
+margin_right = 578.193
+margin_bottom = 261.378
+rect_scale = Vector2( 2.2, 3 )
+texture_normal = ExtResource( 11 )
+text = ExtResource( 11 )

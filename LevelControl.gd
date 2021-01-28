@@ -6,6 +6,10 @@ var level_number : int
 const MUSIC : PackedScene = preload("res://Assets/Music and FX/Music.tscn")
 var music : AudioStreamPlayer = MUSIC.instance()
 
+var music_stream_0 : AudioStream = load("res://Assets/Music and FX/MakeItEqual.ogg")
+var music_stream_1 : AudioStream = load("res://Assets/Music and FX/MakeItEqual2.ogg")
+var music_stream_2 : AudioStream = load("res://Assets/Music and FX/MakeItEqual3.ogg")
+
 func _ready():
 	add_child(music)
 
@@ -30,7 +34,7 @@ var levels : Dictionary = {
 	"Level17" : "res://Levels/Level18/Level18.tscn",
 	"Level18" : "res://Levels/Level19/Level19.tscn",
 	"Level19" : "res://Levels/Level20/Level20.tscn",
-	"Level20" : "res://Levels/Level21/Level21.tscn",
+	"Level20" : "res://Levels/Level0/Level0.tscn",
 }
 
 enum Level_ids {Level0, Level1, Level2, Level3, Level4, Level5, Level6, Level7,
@@ -59,13 +63,20 @@ func prep():
 			current_level.connect("music", self, "play_music")
 		elif level_number > 5:
 			play_music()
-	if level_number > 10 and level_number < 16:
+#Music check
+	if level_number > 0 and level_number < 5:
 		music.stop()
-		music.stream = load("res://Assets/Music and FX/MakeItEqual2.ogg")
+	if level_number > 5 and level_number <= 10 and music.stream != music_stream_0:
+		music.stop()
+		music.stream = music_stream_0
 		music.play()
-	if level_number >= 16:
+	if level_number > 10 and level_number < 16 and music.stream != music_stream_1:
 		music.stop()
-		music.stream = load("res://Assets/Music and FX/MakeItEqual3.ogg")
+		music.stream = music_stream_1
+		music.play()
+	if level_number >= 16 and music.stream != music_stream_2:
+		music.stop()
+		music.stream = music_stream_2
 		music.play()
 
 func next():
