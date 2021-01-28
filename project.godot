@@ -34,7 +34,8 @@ _global_script_class_icons={
 
 config/name="MakeItEqual"
 run/main_scene="res://Levels/Level0/Level0.tscn"
-config/icon="res://icon.png"
+config/icon="res://Assets/Operators/equal.png"
+config/windows_native_icon="res://Assets/Operators/equal.ico"
 
 [autoload]
 
