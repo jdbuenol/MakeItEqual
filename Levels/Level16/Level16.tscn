@@ -1,0 +1,121 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Symbols/Dizzie.png" type="Texture" id=2]
+[ext_resource path="res://Buttons/RotableButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Operators/plus.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Numbers/2.png" type="Texture" id=7]
+[ext_resource path="res://Assets/square_missing.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Numbers/4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Numbers/9.png" type="Texture" id=10]
+[ext_resource path="res://Levels/Level16/Level16.gd" type="Script" id=11]
+
+[node name="Level16" instance=ExtResource( 1 )]
+script = ExtResource( 11 )
+
+[node name="TrueRect" parent="." index="0"]
+margin_left = 153.306
+margin_top = 134.51
+margin_right = 169.306
+margin_bottom = 150.51
+rect_scale = Vector2( 30, 20 )
+
+[node name="Blip" parent="." index="3"]
+volume_db = -15.0
+
+[node name="FadingLabel" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 117.049
+margin_top = 62.3164
+margin_right = 693.049
+margin_bottom = 87.3164
+bbcode_text = "You can rotate [color=#FF0000][wave]RED symbols[/wave][/color] with left and right in the keyboard"
+text = "You can rotate RED symbols with left and right in the keyboard"
+
+[node name="FadingLabel2" parent="." index="7" instance=ExtResource( 4 )]
+margin_left = 273.84
+margin_top = 506.562
+margin_right = 486.84
+margin_bottom = 531.562
+bbcode_enabled = false
+bbcode_text = ""
+text = "It seems that you got it"
+
+[node name="TextureRect" type="TextureRect" parent="." index="8"]
+margin_left = 231.227
+margin_top = 179.594
+margin_right = 247.227
+margin_bottom = 195.594
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="." index="9"]
+margin_left = 231.227
+margin_top = 309.594
+margin_right = 247.227
+margin_bottom = 325.594
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="." index="10"]
+margin_left = 299.575
+margin_top = 180.716
+margin_right = 315.575
+margin_bottom = 196.716
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+
+[node name="TextureRect7" type="TextureRect" parent="." index="11"]
+margin_left = 300.575
+margin_top = 308.716
+margin_right = 316.575
+margin_bottom = 324.716
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+
+[node name="TextureRect8" type="TextureRect" parent="." index="12"]
+margin_left = 366.575
+margin_top = 311.716
+margin_right = 382.575
+margin_bottom = 327.716
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="." index="13"]
+margin_left = 360.31
+margin_top = 179.594
+margin_right = 376.31
+margin_bottom = 195.594
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="." index="14"]
+margin_left = 422.623
+margin_top = 179.594
+margin_right = 438.623
+margin_bottom = 195.594
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+
+[node name="TextureRect5" type="TextureRect" parent="." index="15"]
+margin_left = 489.326
+margin_top = 182.181
+margin_right = 505.326
+margin_bottom = 198.181
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 9 )
+
+[node name="RotableButton" parent="." index="16" instance=ExtResource( 3 )]
+margin_left = 809.294
+margin_top = 181.326
+margin_right = 825.294
+margin_bottom = 197.326
+texture_normal = ExtResource( 10 )
+text = ExtResource( 10 )

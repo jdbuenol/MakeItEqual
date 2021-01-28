@@ -38,3 +38,7 @@ func _input(event):
 		current.grow_more()
 	elif event.is_action_pressed("ui_down") and current is ShrinkableButton:
 		current.shrink()
+	elif event.is_action_pressed("ui_left") and current is RotableButton:
+		current.rotate_left()
+	elif event.is_action_pressed("ui_right") and current is RotableButton:
+		current.rotate_right()

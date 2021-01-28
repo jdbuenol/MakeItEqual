@@ -21,9 +21,21 @@ var levels : Dictionary = {
 	"Level8" : "res://Levels/Level9/Level9.tscn",
 	"Level9" : "res://Levels/Level10/Level10.tscn",
 	"Level10" : "res://Levels/Level11/Level11.tscn",
+	"Level11" : "res://Levels/Level12/Level12.tscn",
+	"Level12" : "res://Levels/Level13/Level13.tscn",
+	"Level13" : "res://Levels/Level14/Level14.tscn",
+	"Level14" : "res://Levels/Level15/Level15.tscn",
+	"Level15" : "res://Levels/Level16/Level16.tscn",
+	"Level16" : "res://Levels/Level17/Level17.tscn",
+	"Level17" : "res://Levels/Level18/Level18.tscn",
+	"Level18" : "res://Levels/Level19/Level19.tscn",
+	"Level19" : "res://Levels/Level20/Level20.tscn",
+	"Level20" : "res://Levels/Level21/Level21.tscn",
 }
 
-enum Level_ids {Level0, Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10, Level11}
+enum Level_ids {Level0, Level1, Level2, Level3, Level4, Level5, Level6, Level7,
+Level8, Level9, Level10, Level11, Level12, Level13, Level14, Level15, Level16,
+Level17, Level18, Level19, Level20}
 
 func prep():
 	current_level = get_viewport().get_children()[-1]
@@ -50,6 +62,10 @@ func prep():
 	if level_number > 10 and level_number < 16:
 		music.stop()
 		music.stream = load("res://Assets/Music and FX/MakeItEqual2.ogg")
+		music.play()
+	if level_number >= 16:
+		music.stop()
+		music.stream = load("res://Assets/Music and FX/MakeItEqual3.ogg")
 		music.play()
 
 func next():

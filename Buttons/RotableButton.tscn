@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Buttons/RotableButton.gd" type="Script" id=2]
+
+[node name="RotableButton" instance=ExtResource( 1 )]
+modulate = Color( 1, 0, 0, 1 )
+anchor_left = -3.63798e-12
+anchor_top = 0.000185604
+anchor_bottom = 0.000185604
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="." index="1"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/TextureButtons/START.png" type="Texture" id=2]
@@ -10,6 +10,28 @@
 [ext_resource path="res://Assets/TextureButtons/CONTINUE0.png" type="Texture" id=8]
 [ext_resource path="res://Assets/TextureButtons/CREDITS.png" type="Texture" id=9]
 [ext_resource path="res://Levels/Level0/Level0.gd" type="Script" id=10]
+[ext_resource path="res://Assets/Operators/minus.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Operators/plus.png" type="Texture" id=13]
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.340741, 0.666667, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.741176, 0.741176, 0.741176, 1, 0.364706, 0.364706, 0.364706, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 50, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_random = 1.0
+color_ramp = SubResource( 3 )
 
 [node name="Level0" instance=ExtResource( 1 )]
 script = ExtResource( 10 )
@@ -29,19 +51,62 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.50293
 anchor_bottom = 1.0
-margin_left = -72.7963
+margin_left = -64.7963
 margin_top = -317.693
-margin_right = 4.20367
+margin_right = 12.2037
 margin_bottom = -301.693
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 2 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." index="5"]
+[node name="Particles2D" type="Particles2D" parent="." index="5"]
+position = Vector2( 147.486, -6.70139 )
+scale = Vector2( 3, 3 )
+lifetime = 4.0
+preprocess = 5.0
+process_material = SubResource( 1 )
+texture = ExtResource( 13 )
+
+[node name="Particles2D2" type="Particles2D" parent="." index="6"]
+position = Vector2( 147.486, -8.19969 )
+scale = Vector2( 3, 3 )
+lifetime = 4.0
+process_material = SubResource( 1 )
+texture = ExtResource( 11 )
+
+[node name="Particles2D3" type="Particles2D" parent="." index="7"]
+position = Vector2( 147.486, -8.19969 )
+scale = Vector2( 3, 3 )
+lifetime = 4.0
+process_material = SubResource( 1 )
+texture = ExtResource( 12 )
+
+[node name="Particles2D4" type="Particles2D" parent="." index="8"]
+position = Vector2( 868.544, -0.708161 )
+scale = Vector2( 3, 3 )
+lifetime = 4.0
+process_material = SubResource( 1 )
+texture = ExtResource( 13 )
+
+[node name="Particles2D5" type="Particles2D" parent="." index="9"]
+position = Vector2( 868.544, -2.20647 )
+scale = Vector2( 3, 3 )
+lifetime = 4.0
+process_material = SubResource( 1 )
+texture = ExtResource( 11 )
+
+[node name="Particles2D6" type="Particles2D" parent="." index="10"]
+position = Vector2( 868.544, -2.20647 )
+scale = Vector2( 3, 3 )
+lifetime = 4.0
+process_material = SubResource( 1 )
+texture = ExtResource( 12 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." index="11"]
 anchor_bottom = 0.527
-margin_left = 243.975
+margin_left = 257.975
 margin_top = 49.3857
-margin_right = 400.975
+margin_right = 414.975
 margin_bottom = -233.814
 grow_horizontal = 2
 grow_vertical = 2
@@ -56,7 +121,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Continue" type="TextureButton" parent="." index="6"]
+[node name="Continue" type="TextureButton" parent="." index="12"]
 margin_left = 425.265
 margin_top = 338.643
 margin_right = 515.265
@@ -69,7 +134,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CREDITS" type="TextureButton" parent="." index="7"]
+[node name="CREDITS" type="TextureButton" parent="." index="13"]
 margin_left = 441.056
 margin_top = 395.224
 margin_right = 531.056
@@ -82,7 +147,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="EXIT" type="TextureButton" parent="." index="8"]
+[node name="EXIT" type="TextureButton" parent="." index="14"]
 margin_left = 450.036
 margin_top = 447.98
 margin_right = 540.036

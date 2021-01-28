@@ -1,0 +1,172 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Levels/GenericLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Buttons/MovableButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Operators/equal.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Symbols/Smiley.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Numbers/5.png" type="Texture" id=5]
+[ext_resource path="res://Assets/square_missing.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Numbers/4.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Numbers/8.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Symbols/Dizzie.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Operators/plus.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Numbers/3.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Numbers/9.png" type="Texture" id=12]
+[ext_resource path="res://Levels/Level12/Level12.gd" type="Script" id=13]
+[ext_resource path="res://Buttons/FadingLabel.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Assets/Numbers/1.png" type="Texture" id=15]
+
+[node name="Level12" instance=ExtResource( 1 )]
+script = ExtResource( 13 )
+
+[node name="TrueRect" parent="." index="0"]
+margin_left = 179.0
+margin_top = 131.0
+margin_right = 195.0
+margin_bottom = 147.0
+rect_scale = Vector2( 30, 20 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="6"]
+margin_left = 409.327
+margin_top = 182.878
+margin_right = 425.327
+margin_bottom = 198.878
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+
+[node name="TextureRect11" type="TextureRect" parent="." index="7"]
+margin_left = 541.875
+margin_top = 352.73
+margin_right = 557.875
+margin_bottom = 368.73
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+
+[node name="TextureRect7" type="TextureRect" parent="." index="8"]
+margin_left = 258.806
+margin_top = 351.057
+margin_right = 274.806
+margin_bottom = 367.057
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+
+[node name="TextureRect4" type="TextureRect" parent="." index="9"]
+margin_left = 405.119
+margin_top = 267.498
+margin_right = 421.119
+margin_bottom = 283.498
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 9 )
+
+[node name="TextureRect8" type="TextureRect" parent="." index="10"]
+margin_left = 400.915
+margin_top = 350.746
+margin_right = 416.915
+margin_bottom = 366.746
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 9 )
+
+[node name="TextureRect9" type="TextureRect" parent="." index="11"]
+margin_left = 330.28
+margin_top = 350.746
+margin_right = 346.28
+margin_bottom = 366.746
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 10 )
+
+[node name="TextureRect10" type="TextureRect" parent="." index="12"]
+margin_left = 465.664
+margin_top = 351.587
+margin_right = 481.664
+margin_bottom = 367.587
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="TextureRect5" type="TextureRect" parent="." index="13"]
+margin_left = 467.274
+margin_top = 265.394
+margin_right = 483.274
+margin_bottom = 281.394
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="TextureRect6" type="TextureRect" parent="." index="14"]
+margin_left = 543.52
+margin_top = 267.706
+margin_right = 559.52
+margin_bottom = 283.706
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+
+[node name="TextureRect2" type="TextureRect" parent="." index="15"]
+margin_left = 467.286
+margin_top = 181.243
+margin_right = 483.286
+margin_bottom = 197.243
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="TextureRect3" type="TextureRect" parent="." index="16"]
+margin_left = 542.477
+margin_top = 176.198
+margin_right = 558.477
+margin_bottom = 192.198
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 11 )
+
+[node name="MovableButton" parent="." index="17" instance=ExtResource( 2 )]
+margin_left = 749.376
+margin_top = 143.828
+margin_right = 765.376
+margin_bottom = 159.828
+text = ExtResource( 15 )
+
+[node name="MovableButton2" parent="." index="18" instance=ExtResource( 2 )]
+margin_left = 895.417
+margin_top = 209.705
+margin_right = 911.417
+margin_bottom = 225.705
+texture_normal = ExtResource( 8 )
+text = ExtResource( 8 )
+
+[node name="MovableButton3" parent="." index="19" instance=ExtResource( 2 )]
+margin_left = 754.932
+margin_top = 267.645
+margin_right = 770.932
+margin_bottom = 283.645
+texture_normal = ExtResource( 7 )
+text = ExtResource( 7 )
+
+[node name="MovableButton4" parent="." index="20" instance=ExtResource( 2 )]
+margin_left = 868.431
+margin_top = 360.508
+margin_right = 884.431
+margin_bottom = 376.508
+texture_normal = ExtResource( 12 )
+text = ExtResource( 12 )
+
+[node name="FadingLabel" parent="." index="21" instance=ExtResource( 14 )]
+margin_left = 108.059
+margin_top = 36.1189
+margin_right = 836.059
+margin_bottom = 61.1189
+bbcode_enabled = false
+bbcode_text = ""
+text = "Sometimes you will meet with more than one Smiley, still all equations should be true"
+
+[node name="FadingLabel2" parent="." index="22" instance=ExtResource( 14 )]
+margin_left = 328.072
+margin_top = 487.109
+margin_right = 701.072
+margin_bottom = 512.109
+bbcode_enabled = false
+bbcode_text = ""
+text = "I think you get this."
+
+[node name="FadingLabel3" parent="." index="23" instance=ExtResource( 14 )]
+margin_left = 198.773
+margin_top = 82.7272
+margin_right = 652.773
+margin_bottom = 107.727
+bbcode_text = "There should be only one [color=#0000ff]BLUE ITEM[/color] inside the box"
+text = "There should be only one BLUE ITEM inside the box"
